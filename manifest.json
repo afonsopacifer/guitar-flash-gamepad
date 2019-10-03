@@ -1,0 +1,13 @@
+{
+  "name": "Guitar Flash Gamepad",
+  "version": "0.1.0",
+  "manifest_version": 1,
+  "description": "Google Chrome Extension for provide a Gamepad controls for the Guitar Flash Game.",
+  "icons" : {
+    "16" : "icon.png"
+  },
+  "content_scripts": [{
+    "matches": [ "https://guitarflash.com/*" ],
+    "js": [ "gamepad.js", "index.js" ]
+  }]
+}
